@@ -2,29 +2,31 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
+  SiAmazonaws,
+  SiWindows,
   SiVisualstudiocode,
-  SiJupyter,
+  SiUbuntu,
   SiPostman,
-  SiHeroku,
+  SiTerraform,
 } from "react-icons/si";
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "55px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiAmazonaws />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter />
+        <SiWindows/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiUbuntu />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <SiTerraform />
       </Col>
     </Row>
   );
