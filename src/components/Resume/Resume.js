@@ -4,29 +4,26 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
+import pdf from "../../Assets/Sanjid-Salam.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
+ const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
+//  const [spojRank, upadteSpojRank] = useState(0);
+//  const [hackerrank, upadteHackerank] = useState(0);
+// const [sem, upadateSem] = useState(0);
+//  const [cgpa, upadteCgpa] = useState(0);
 
-  useEffect(() => {
     axios
       .get(uri)
       .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
+        //upadteSpojRank(res.data.message[0].spojRank);
+        //upadteHackerank(res.data.message[1].hackerrank);
+        //upadteCgpa(res.data.message[2].cgpa);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
 
   return (
     <Container fluid className="resume-section">
@@ -39,10 +36,11 @@ function Resume() {
           </Button>
         </Row>
         <Row className="resume">
-          <Col md={6} className="resume-left">
+          <Col md={13} className="resume-center">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
+              title="SYSTEM ENGINEER"
+              title="[Activelobby Information Systems Pvt Ltd, Kochi]"
               date="June 2020 - August 2020"
               content={[
                 "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
@@ -63,12 +61,12 @@ function Resume() {
               ]}
             />
           </Col>
-          <Col md={6} className="resume-right">
+          <Col md={12} className="resume-center">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
               title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
               date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              content={[`CGPA: 6.29)`]}
             />
             <Resumecontent
               title="12TH BOARD [ODM Public School,Odisha]"
@@ -84,8 +82,8 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
+  //              `Current rank in Spoj ${spojRank}`,
+//                `Current rank in HackerRank  ${hackerrank}`,
                 "Top Performer in Code-Break 1.0",
                 "Participant in Hack-A-Bit 2019",
               ]}
@@ -96,7 +94,7 @@ function Resume() {
           <Button variant="primary" href={pdf} target="_blank">
           <AiOutlineDownload />&nbsp;Download CV
           </Button>
-        </Row>
+       </Row>
       </Container>
     </Container>
   );
