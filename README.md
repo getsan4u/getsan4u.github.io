@@ -11,7 +11,7 @@ This project was built using these technologies.
 - Express.js
 - CSS3
 - Atom
-- Vercel
+- AWS Amplify
 
 ## Features
 
