@@ -36,54 +36,63 @@ function Resume() {
           </Button>
         </Row>
         <Row className="resume">
-          <Col md={13} className="resume-center">
+          <Col md={12} className="resume-center">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="SYSTEM ENGINEER"
-              title="[Activelobby Information Systems Pvt Ltd, Kochi]"
-              date="June 2020 - August 2020"
+              title="SYSTEM ENGINEER [Activelobby Information Systems Pvt Ltd, Kochi]"
+              date="May 2019 - Present"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
-              ]}
+                "Managing Amazon Web Services (EC2, Light Sail, RDS, VPC, S3, Route53, IAM, CloudWatch).",
+                "Managing servers such as VPS(Linux/Windows), Shared(Linux/Windows), Mail and DNS.",
+                "Provisioned and Managed control panels such as cPanel/WHM, Plesk, Webmin.",
+                "Troubleshooting problem tickets and service tickets.",
+                "Installed and Managed Web Servers ( Apache, Nginx, and IIS), DB Server (MySQL and MSSQL), Mail Server(SmarterMail and Exim).",
+                "Installed and Configure CMS servers (WordPress, Magento, Drupal).",
+                "Live server migration from CPanel to Cpanel, Plesk to Plesk, data center to cloud solutions (AWS & Azure), and other Hosted Services which include both Linux and Windows environments.",
+                "Create/Managing buckets on S3 (CLI, uploaded & stored DB and Website backup.",
+                "Manipulation of shell scripts and Scheduling jobs using crontab",
+                "Creating/Managing AMI/Snapshots/Volumes, Upgrade/downgrade AWS resources.",
+                "Managed/Maintained Virtuozzo Hypervisor, SolusVM.",
+                "Installed and Configured MySQL master-slave replication.",
+                "Worked/Managed Service on Azure, GCP IBM, CLOUD, Digital Ocean.",
+                "R&D on Git, Docker, Jenkins, Ansible, Kubernetes.",
+
+                  ]}
             />
-            <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
-              content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
-              ]}
+                          title=" SYSTEM ADMINISTRATOR (INTERN) [Spectrum SoftTehc Solution Pvt Ltd, Kochi]"
+                          date="October 2018 - March 2019"
+                          content={[
+                            "Setting up EC2 instances and configuring webservers for sample application deployment using S3, RDS, IAM, VPC, CloudWatch.",
+                            "Configuring Linux Servers for basic administrative works and user management practices in RHEL, Ubuntu, CentOS.",
+                            "Completed CCNA training and manual configuration of Cisco Routers and Switches.",
+
+                              ]}
             />
-            <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
-              content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
-              ]}
-            />
+
           </Col>
           <Col md={12} className="resume-center">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: 6.29)`]}
+              title="B.Tech In Computer Science And Engineering [M.E.S College Of Engineering,Kuttipuram] "
+              date="2014 - 2018"
+              grade_val={[`CGPA: 6.29)`]}
+              />
+            <Resumecontent
+              title="AISSCE (12TH BOARD) [MES International School, Pattambi] "
+              date="2014"
+              grade_val={["Precentage: 75%"]}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
+            title="AISCE (10TH BOARD) [MES International School, Pattambi] "
+            date="2012"
+            grade_val={["Precentage: 76%"]}
             />
-            <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
-            />
-            <h3 className="resume-title">Ranks and Achivements</h3>
+
+            <h3 className="resume-title">Achivements</h3>
             <Resumecontent
               title=""
               content={[
-  //              `Current rank in Spoj ${spojRank}`,
-//                `Current rank in HackerRank  ${hackerrank}`,
                 "Top Performer in Code-Break 1.0",
                 "Participant in Hack-A-Bit 2019",
               ]}
