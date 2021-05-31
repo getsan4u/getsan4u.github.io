@@ -8,7 +8,7 @@ function ResumeContent(props) {
       </h5>
       <p>
         <em>{props.date}</em>
-      </p>
+      </p>    
       <ul>
         {props.content.map((value, index) => (
           <li key={index}> ‣ {value}</li>

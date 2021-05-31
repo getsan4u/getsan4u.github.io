@@ -9,17 +9,11 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-//  const [spojRank, upadteSpojRank] = useState(0);
-//  const [hackerrank, upadteHackerank] = useState(0);
-// const [sem, upadateSem] = useState(0);
-//  const [cgpa, upadteCgpa] = useState(0);
 
     axios
       .get(uri)
       .then((res) => {
-        //upadteSpojRank(res.data.message[0].spojRank);
-        //upadteHackerank(res.data.message[1].hackerrank);
-        //upadteCgpa(res.data.message[2].cgpa);
+
       })
       .catch((err) => {
         console.log(err);
@@ -76,25 +70,25 @@ function Resume() {
             <Resumecontent
               title="B.Tech In Computer Science And Engineering [M.E.S College Of Engineering,Kuttipuram] "
               date="2014 - 2018"
-              grade_val={[`CGPA: 6.29)`]}
+              content={[`CGPA: 6.29`]}
               />
             <Resumecontent
               title="AISSCE (12TH BOARD) [MES International School, Pattambi] "
               date="2014"
-              grade_val={["Precentage: 75%"]}
+              content={["Precentage: 75%"]}
             />
             <Resumecontent
             title="AISCE (10TH BOARD) [MES International School, Pattambi] "
             date="2012"
-            grade_val={["Precentage: 76%"]}
+            content={["Precentage: 76%"]}
             />
 
             <h3 className="resume-title">Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                "",
+                "",
               ]}
             />
           </Col>
